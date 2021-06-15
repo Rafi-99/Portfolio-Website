@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/contact.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0b49d66a35.js" crossorigin="anonymous"></script>
+
+    <title>rafi-codes.dev | Contact</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"><span class="titles"><i class="fas fa-folder"></i> My Portfolio</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="/about" class="nav-item nav-link active"><span class="titles"><i class="fas fa-user"></i> About Me</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/projects" class="nav-item nav-link active"><span class="titles"><i class="fas fa-laptop-code"></i> My Projects</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact" class="nav-item nav-link active"><span class="titles"><i class="fas fa-address-card"></i> Contact Me</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="text-center rounded-lg p-5 pb-4 m-0">
+        <h1>&lt;/ Contact Me &gt;</h1>
+    </div>
+
+    <p> Hello! You can use the form below to contact me via email. If you wish to reach me directly, please email
+        <strong>rafi.md.2018@gmail.com</strong>. If you wish to reach me on Discord, add <strong>Rafi ™#6927</strong>.
+        I look forward to hearing from you soon!
+    </p>
+
+    <form action="/contact" method="POST" id="email-form">
+        <input type="text" aria-label="Name" id="name" placeholder="Name" required>
+        <br>
+
+        <input type="email" aria-label="Email" id="email" placeholder="Email" required>
+        <br>
+
+        <textarea rows="3" form="email-form" aria-label="Message" id="message" placeholder="Message"
+            required></textarea>
+        <br>
+
+        <input type="submit" class="btn btn-outline-success" value="Send Message">
+    </form>
+
+    <div class="icons">
+        <div class="icon">
+            <a href="https://www.discord.com"><span><i class="fab fa-discord fa-3x"></i></span></a>
+        </div>
+
+        <div class="icon">
+            <a href="https://www.github.com/Rafi-99"><span><i class="fab fa-github-square fa-3x"></i></span></a>
+        </div>
+
+        <div class="icon">
+            <a href="https://www.instagram.com/rafi_the_md"><span><i class="fab fa-instagram fa-3x"></i></span></a>
+        </div>
+
+        <div class="icon">
+            <a href="https://www.linkedin.com/in/rafi2018/"><span><i class="fab fa-linkedin fa-3x"></i></span></a>
+        </div>
+    </div>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/form.js"></script>
+</body>
+</html>

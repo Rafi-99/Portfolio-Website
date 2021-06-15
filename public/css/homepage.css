@@ -1,0 +1,104 @@
+/* Designing for scroll-bar */ 
+::-webkit-scrollbar { 
+    width: 5px; 
+} 
+
+/* Track */ 
+::-webkit-scrollbar-track { 
+    background: linear-gradient( to bottom, #d5d7e5, #eee, #d5d7e5); 
+    border-radius: none; 
+} 
+
+/* Handle */ 
+::-webkit-scrollbar-thumb { 
+    background: black; 
+    border-radius: none; 
+} 
+
+body {
+    background: linear-gradient( to bottom, #d5d7e5, #eee, #d5d7e5);
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background-color: black;
+}
+
+h1 {
+    font-size: calc(1rem + 1.5vw);
+}
+
+.titles {
+    color: white;
+}
+
+.titles:hover {
+    text-shadow: 0px 0px 5px gold;
+}
+
+.heading {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: fixed;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    height: calc(10rem + 5vw);
+    width: calc(10rem + 5vw);
+    margin: auto;
+    background-image: url('../assets/images/LinkedIn.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 5px solid white;
+}
+
+.heading , .heading a, .heading p, .profile-picture {
+    margin-bottom: 10px;
+}
+
+.heading a {
+    max-width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-flex;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Typing animation*/
+.txt-type .txt {
+    border-right: 1px solid black;
+    animation: cursor-blink 1s infinite;
+}
+
+@keyframes cursor-blink {
+    0% {border-color: black;}
+    49% {border-color: black;}
+    50% {border-color: transparent;}
+    99% {border-color: transparent;}
+    100% {border-color: black;}
+}
+
+@media screen and (width: 768px) {
+    .heading {
+        position: relative;
+        padding-top: 300px;
+    }
+}

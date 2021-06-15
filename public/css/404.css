@@ -1,0 +1,35 @@
+body {
+    background: linear-gradient( to bottom, #d5d7e5, #eee, #d5d7e5);
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.error {
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.error h1 {
+    font-size: 150px;
+}
+
+.error a {
+    width: calc(100%/3);
+    margin: auto;
+    transform: translateX(-50%);
+    position: fixed;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
