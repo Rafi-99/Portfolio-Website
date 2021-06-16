@@ -84,6 +84,11 @@ textarea:focus, #name:focus, #email:focus {
     font-size: calc(1.5rem + 1.5vw);
 }
 
+.fab.fa-facebook-square {
+    color: #1778F2;
+    font-size: calc(1.5rem + 1.5vw);
+}
+
 .fab.fa-github-square {
     color: black;
     font-size: calc(1.5rem + 1.5vw);
