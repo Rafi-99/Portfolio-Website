@@ -1,19 +1,19 @@
-/* Designing for scroll-bar */ 
-::-webkit-scrollbar { 
-    width: 5px; 
-} 
+/* Designing for scroll-bar */
+::-webkit-scrollbar {
+    width: 5px;
+}
 
-/* Track */ 
-::-webkit-scrollbar-track { 
-    background: linear-gradient( to bottom, #d5d7e5, #eee, #d5d7e5); 
-    border-radius: none; 
-} 
+/* Track */
+::-webkit-scrollbar-track {
+    background: linear-gradient( to bottom, #d5d7e5, #eee, #d5d7e5);
+    border-radius: none;
+}
 
-/* Handle */ 
-::-webkit-scrollbar-thumb { 
-    background: black; 
-    border-radius: none; 
-} 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: none;
+}
 
 body {
     background: linear-gradient( to bottom, #d5d7e5, #eee, #d5d7e5);
@@ -53,7 +53,7 @@ h1 {
     height: calc(10rem + 5vw);
     width: calc(10rem + 5vw);
     margin: auto;
-    background-image: url('../assets/images/LinkedIn.jpg');
+    background-image: url('../assets/images/LinkedIn.png');
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;

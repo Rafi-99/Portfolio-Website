@@ -20,7 +20,7 @@ class TypeWriter {
             this.text = fullText.substring(0, this.text.length + 1);
         }
 
-        this.textElement.innerHTML = `<span class="txt" style="color: maroon; font-weight:bold;">${this.text}</span>`;
+        this.textElement.innerHTML = `<span class='txt' style='color: maroon; font-weight:bold;'>${this.text}</span>`;
 
         let typeSpeed = 100;
 

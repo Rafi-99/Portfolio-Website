@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Source code for rafi-codes.dev",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,14 +11,14 @@
   "author": "Rafi",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.0.1",
-    "express": "^4.17.1",
-    "googleapis": "^76.0.0",
-    "nodemailer": "^6.6.1",
-    "path": "^0.12.7"
+    "bootstrap": "latest",
+    "express": "latest",
+    "googleapis": "latest",
+    "nodemailer": "latest",
+    "path": "latest"
   },
   "engines": {
-    "node": "^16.3.0", 
-    "npm": "^7.17.0"
+    "node": "latest",
+    "npm": "latest"
   }
 }

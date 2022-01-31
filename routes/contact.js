@@ -1,7 +1,8 @@
-const express = require("express");
-const { google } = require('googleapis');
-const path = require('path');
-const nodemailer = require('nodemailer');
+import { Router } from 'express';
+import { google } from 'googleapis';
+import path from 'path';
+import { createTransport } from 'nodemailer';
+
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
 const REDIRECT_URI = process.env.REDIRECT_URI;
@@ -10,16 +11,17 @@ const GMAIL_CLIENT = new google.auth.OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_U
 
 GMAIL_CLIENT.setCredentials({ refresh_token: REFRESH_TOKEN });
 
-let router = express.Router();
+let router = Router();
+const __dirname = path.resolve();
 
-router.route("/").get((req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'pages', 'contact.html'));
+router.route('/').get((req, res) => {
+    res.sendFile(path.join(__dirname, '/pages/contact.html'));
 })
 .post((req, res) => {
     async function sendMail() {
         try {
             const ACCESS_TOKEN = await GMAIL_CLIENT.getAccessToken();
-            const transport = nodemailer.createTransport({
+            const transport = createTransport({
                 service: 'gmail',
                 auth: {
                     type: 'OAuth2',
@@ -40,7 +42,7 @@ router.route("/").get((req, res) => {
 
             const result = await transport.sendMail(mailOptions);
             return result;
-        } 
+        }
         catch (error) {
             return error;
         }
@@ -52,4 +54,4 @@ router.route("/").get((req, res) => {
     .catch((error) => console.log(error.message));
 });
 
-module.exports = router;
+export default router;
